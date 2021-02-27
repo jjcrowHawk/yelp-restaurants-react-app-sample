@@ -7,7 +7,7 @@ import useResults from '../hooks/useResults'
 import ResultsList from '../components/ResultsList';
 
 // create a component
-const SearchScreen = () => {
+const SearchScreen = (props) => {
   //state
   const [term, setTerm] = useState('');
   const [searchApi, results, errorMessage] = useResults()
